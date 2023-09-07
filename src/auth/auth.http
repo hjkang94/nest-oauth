@@ -1,0 +1,51 @@
+### 회원가입
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "email": "test111@test.com",
+  "password": "abcd",
+  "username": "hjkang"
+}
+
+### 로그인
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "test111@test.com",
+  "password": "abcd"
+}
+
+### 로그인2
+POST http://localhost:3000/auth/login2
+Content-Type: application/json
+
+{
+  "email": "test111@test.com",
+  "password": "abcd"
+}
+
+### Guard 테스트
+GET http://localhost:3000/auth/test-guard
+
+### 로그인3
+POST http://localhost:3000/auth/login3
+Content-Type: application/json
+
+{
+  "email": "test111@test.com",
+  "password": "abcd"
+}
+
+### 틀린 비밀번호로 로그인3
+POST http://localhost:3000/auth/login3
+Content-Type: application/json
+
+{
+  "email": "test111@test.com",
+  "password": "abcde"
+}
+
+### 테스트
+GET http://localhost:3000/auth/test-guard2
